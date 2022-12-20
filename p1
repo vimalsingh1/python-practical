@@ -1,0 +1,22 @@
+# find roots of a quadratic equation
+
+import math
+
+a= float(input("enter the value of a"))
+b= float(input("enter the value of b"))
+c= float(input("enter the value of c"))
+
+d = (b**2) - (4*a*c)
+
+if d>0:
+    r1= (-b + math.sqrt(d) / (2*a))
+    r2= (-b - math.sqrt(d) / (2*a))
+    print ("roots are real and unequal ",r1,"and",r2)
+
+elif d==0:
+    r1=-b/(2*a)
+    print("roots are real and same ",r1)
+
+else d<0:
+    print("no real roots are there ") 
+        

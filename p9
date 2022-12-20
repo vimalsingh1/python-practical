@@ -1,0 +1,20 @@
+# operations on a string
+#a
+test=input("enter the string to perform the task /n")
+element=input("enter the character to find its frequency /n")
+freq=0
+for i in test:
+    if i==element:
+        freq += 1
+        print (freq)
+
+#b 
+test= list(test)
+swap= input("enter the character to swap /n")
+swap_with=input("enter the character to swap with /n")
+i=int(test.index(swap))
+j=int(test.index(swap_with))
+test[i],test[j]=test[j],test[i]
+print(''.join(test))
+
+
